@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+    schema: raw
+    tables:
+      - name: parking_violation_codes
+      - name: parking_violations_2023
